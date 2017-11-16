@@ -1,3 +1,48 @@
 /*
  * Estilos de tu proyecto
  */
+#sidebar {
+    background-color: #191919;
+    padding: 10px;
+    display: inline-block;
+}
+
+#sidebar a:hover, a:focus {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#sidebar.nav > li > a,
+#sidebar.nav > li > a:link {
+    background-color: #191919;
+    color: #FFF;
+}
+
+#sidebar.nav > li > a:hover,
+#sidebar.nav > li > a:focus {
+    background-color: #373737;
+}
+
+#sidebar.nav-pills > li.active > a,
+#sidebar.nav-pills > li.active > a:hover,
+#sidebar.nav-pills > li.active > a:focus {
+    color: #FFF;
+    background-color: #C72A25;
+}
+#chart_div{
+	display: inline-block;
+}
+.cicle{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 2px solid #ffc107;
+	margin: 20px;
+}
+.logo{
+	width: 176px;
+	
+}
