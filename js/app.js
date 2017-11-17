@@ -78,3 +78,37 @@ function drawBasic() {
 
       chart.draw(data, options);
     }
+    var menuAm = document.getElementById("am");
+    var menuPm = document.getElementById("pm");
+    //dashboard Chile - Mostrar y esconder 
+    var toggleMenu = document.getElementById("menu-1");
+    subMenu = document.getElementById("sub-menu");
+
+    toggleMenu.addEventListener('click',function(){
+      subMenu.classList.toggle('mostrar');
+      menuAm.style.display = "none";
+      menuPm.style.display = "none";
+    })
+   //dashboard Chile - sub menu AM - PM
+    var toggle = document.getElementById("menu2017");
+    subMenu2017 = document.getElementById("sub-menu2017");
+
+    toggle.addEventListener('click',function(){
+      subMenu2017.classList.toggle('mostrar2017');
+      menuAm.style.display = "block";
+      menuPm.style.display = "block";
+    })
+    //Dashboard Ciudad de México
+    var toggleMexico = document.getElementById("menu-mexico");
+    subMenuMexico = document.getElementById("subMenu-mexico");
+
+    toggleMexico.addEventListener('click',function(){
+      subMenuMexico.classList.toggle('mostrar');
+    })
+    //Dashboard Ciudad de Lima
+    var toggleLima = document.getElementById("menu-lima");
+    subMenuLima = document.getElementById("subMenu-lima");
+
+    toggleLima.addEventListener('click',function(){
+      subMenuLima.classList.toggle('mostrar');
+    })
