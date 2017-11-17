@@ -4,31 +4,36 @@
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
 
- // Load the Visualization API and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
+// Load the Visualization API and the corechart package.
+google.charts.load('current', {'packages':['corechart']});
 // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(dibujar);
+google.charts.setOnLoadCallback(dibujar);
       //google.setOnLoadCallback(dibujar);
+      var sprint1 = data['SCL']['2017-2']['students'][0]['sprints'][0]['number'];
+      var sprint2 = data['SCL']['2017-2']['students'][0]['sprints'][1]['number'];
+
+/*for (var i = 0; data['SCL']['2017-2']['students'].length>0; i ++){
+	//console.log(data['SCL']['2017-2']['students']['active']==true);
+}*/
 
 function dibujar() {
 // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Comidas');
-        data.addColumn('number', 'Visitas');
-        data.addRows([
-          ['Mushrooms', 3],
-          ['Onions', 134],
-          ['Olives', 14],
-          ['Zucchini', 19],
-          ['Pepperoni', 29]
-        ]);
+	var data = new google.visualization.DataTable();
+	data.addColumn('string', 'Inscripción');
+	data.addColumn('number', 'Visitas');
+	data.addRows([
+		['Sprint '+sprint1, 3],
+		['Sprint '+sprint2, 134],
+		]);
 
-        // Set chart options
-        var options = {'title':'Visitas de Comidas',
-                       'width':400,
-                       'height':300};
+    // Set chart options
+        var options = {'title':'Inscripción',
+        'width':300,
+        'height':300,
+     'bar': { groupWidth: '45%' }};
 
         // Instantiate and draw our chart, passing in some options.
+
         var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       };
@@ -78,6 +83,15 @@ function drawBasic() {
 
       chart.draw(data, options);
     }
+
+
+   /* console.log(data['AQP']);
+    console.log(data['AQP']['2016-2']);
+    console.log(data['AQP']['2016-2']['students'][0]['name']);
+    console.log(data['AQP']['2016-2']['students'][0]['sprints'][0]['number']);
+     console.log(data['AQP']['2016-2']['students'][0]['sprints']['active']=true);*/
+   /*****************************************************************************************/
+
     var menuAm = document.getElementById("am");
     var menuPm = document.getElementById("pm");
     //dashboard Chile - Mostrar y esconder 
@@ -112,3 +126,5 @@ function drawBasic() {
     toggleLima.addEventListener('click',function(){
       subMenuLima.classList.toggle('mostrar');
     })
+
+
