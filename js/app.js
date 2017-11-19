@@ -5,7 +5,7 @@
 // Puedes hacer uso de la base de datos a través de la variable `data`
 
 // Load the Visualization API and the corechart package.
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {packages:['corechart']});
 // Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(dibujar);
       //google.setOnLoadCallback(dibujar);
@@ -29,12 +29,13 @@ function dibujar() {
     // Set chart options
         var options = {'title':'Inscripción',
         'width':300,
-        'height':300,
+        'height':290,
+        'float' : 'left',
      'bar': { groupWidth: '45%' }};
 
         // Instantiate and draw our chart, passing in some options.
 
-        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       };
 
@@ -71,7 +72,7 @@ function drawBasic() {
           viewWindow: {
             min: [7, 30, 0],
             max: [17, 30, 0]
-          }
+          },
         },
         vAxis: {
           title: 'Rating (scale of 1-10)'
@@ -82,7 +83,7 @@ function drawBasic() {
         document.getElementById('chart_div2'));
 
       chart.draw(data, options);
-    }
+    };
 
 
    /* console.log(data['AQP']);
@@ -96,9 +97,9 @@ function drawBasic() {
     var menuPm = document.getElementById("pm");
     //dashboard Chile - Mostrar y esconder 
     var toggleMenu = document.getElementById("menu-1");
-    subMenu = document.getElementById("sub-menu");
+     subMenu = document.getElementById("sub-menu");
 
-    toggleMenu.addEventListener('click',function(){
+    toggleMenu.addEventListener("click",function(){
       subMenu.classList.toggle('mostrar');
       menuAm.style.display = "none";
       menuPm.style.display = "none";
@@ -107,7 +108,7 @@ function drawBasic() {
     var toggle = document.getElementById("menu2017");
     subMenu2017 = document.getElementById("sub-menu2017");
 
-    toggle.addEventListener('click',function(){
+    toggle.addEventListener("click",function(){
       subMenu2017.classList.toggle('mostrar2017');
       menuAm.style.display = "block";
       menuPm.style.display = "block";

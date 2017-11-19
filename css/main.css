@@ -1,9 +1,19 @@
-/* Nav vertical */
+html,body{
+
+margin:0px;
+
+height:100%;
+
+}
+/*Nav Horizontal */
 #container-1{
     background-color: #333333;
     border: none;
-    margin: 0px;
     border-radius: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
 }
 #home a{
     background-color: #333333;
@@ -32,11 +42,21 @@
     background-color: #F9A91A;
 }
 
-/*Nav Horizontal */
+/* Nav vertical */
+#menuHorizontal{
+	background-color: #333333;
+	display: inline-block;
+    position: fixed;
+    width: 250px;
+    top: 50px;
+    height: 100%
+}
 #sidebar {
     background-color: #333333;
     padding: 10px;
     display: inline-block;
+    position: fixed;
+    top: 50px;
 }
 
 #sidebar a:hover, a:focus {
@@ -65,9 +85,6 @@
 
 #chart_div{
 	display: inline-block;
-	width: 600px;
-	height: 300px;
-
 }
 
 #chart_div2{
@@ -152,13 +169,8 @@
 .contenedor{
 	display: inline-block;
 	background-color: purple;
-	width: 80%;
-	height: 1000px;
-	padding: 20px;
-}
-.iframe{
-	
-	background-color: red
+	margin-top: 50px;
+	margin-left: 245px;
 	width: 100%;
-	height: 100%;
+	padding: 20px;
 }
