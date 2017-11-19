@@ -13,7 +13,10 @@ height:100%;
     position: fixed;
     top: 0px;
     width: 100%;
+<<<<<<< HEAD
     z-index: 3;
+=======
+>>>>>>> cambios menú vertical
 }
 #home a{
     background-color: #333333;
@@ -159,9 +162,6 @@ height:100%;
 	line-height: 2.5;
 	cursor: pointer;
 }
-
-
-/*Gráficos*/
 #sub-menu .menu-2 .menu_link{
     color: #fff;
 }
