@@ -82,15 +82,6 @@ height:100%;
     background-color: #C72A25;
 }
 
-#chart_div{
-	display: inline-block;
-}
-
-#chart_div2{
-	display: inline-block;
-	width: 300px;
-}
-
 .cicle{
 	display: inline-block;
 	width: 90px;
@@ -260,6 +251,10 @@ height:100%;
 	background-color: #FFF;
 	float: right;
 	border-radius: 5px;
+	background-color: #e6e6e6;
+	margin-top: 50px;
+	margin-left: 245px;
+	width: 80%;
 	padding: 20px;
 	margin-left: 10px;
 	margin-top: 10px;
@@ -376,3 +371,31 @@ height:100%;
 	top: -44px;
 	right:120px;
 }
+/*CONTENEDOR*/
+h3{
+	color: #4d4d4d;
+	position: relative;
+	top: 0;
+	text-align: center;
+}
+.graphic{
+	display: inline-block;
+	background-color: #fff;
+	margin: 10px;
+	border-radius: 10px;
+}
+#graphicInscrip{
+	display: inline-block;
+}
+
+#graphicDesert{
+	display: inline-block;
+}
+#graphicLogro{
+	display: inline-block;
+}
+.bigGraphic{
+	margin-top: 10px;
+}
+
+

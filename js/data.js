@@ -3855,7 +3855,35 @@ var data = {
           'name': 'Emmalee Bowery',
           'photo': 'http://dummyimage.com/148x142.png/5fa2dd/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1020,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Dianne Willingam',
@@ -3881,6 +3909,13 @@ var data = {
               'score': {
                 'tech': 1482,
                 'hse': 931
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
               }
             }
           ]
@@ -3910,6 +3945,13 @@ var data = {
                 'tech': 1761,
                 'hse': 711
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1357,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -3937,6 +3979,13 @@ var data = {
               'score': {
                 'tech': 1345,
                 'hse': 943
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1357,
+                'hse': 1146
               }
             }
           ]
@@ -3966,6 +4015,13 @@ var data = {
                 'tech': 1498,
                 'hse': 1090
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -3973,7 +4029,36 @@ var data = {
           'name': 'Thomasin Dundridge',
           'photo': 'http://dummyimage.com/174x247.png/ff4444/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1720,
+                'hse': 1153
+              }
+            }
+            ]
         },
         {
           'name': 'Gabriela Simonsen',
@@ -4000,6 +4085,13 @@ var data = {
                 'tech': 1759,
                 'hse': 884
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1657,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -4007,13 +4099,69 @@ var data = {
           'name': 'Lilia Wombwell',
           'photo': 'http://dummyimage.com/117x223.png/dddddd/000000',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1020,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Elinor Zavittieri',
           'photo': 'http://dummyimage.com/125x212.png/5fa2dd/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1260,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Alvina Peaker',
@@ -4039,6 +4187,13 @@ var data = {
               'score': {
                 'tech': 1570,
                 'hse': 1182
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1497,
+                'hse': 1146
               }
             }
           ]
@@ -4068,6 +4223,13 @@ var data = {
                 'tech': 1620,
                 'hse': 633
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1357,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -4096,6 +4258,13 @@ var data = {
                 'tech': 1104,
                 'hse': 694
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -4103,13 +4272,69 @@ var data = {
           'name': 'Glynda Prue',
           'photo': 'http://dummyimage.com/227x104.png/5fa2dd/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1720,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Cynthea Idiens',
           'photo': 'http://dummyimage.com/100x162.png/cc0000/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1020,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Justinn Leggatt',
@@ -4135,6 +4360,13 @@ var data = {
               'score': {
                 'tech': 1364,
                 'hse': 839
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
               }
             }
           ]
@@ -4164,6 +4396,13 @@ var data = {
                 'tech': 1248,
                 'hse': 685
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -4171,13 +4410,69 @@ var data = {
           'name': 'Ericka Pavolillo',
           'photo': 'http://dummyimage.com/236x133.png/5fa2dd/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1020,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Alene Pechacek',
           'photo': 'http://dummyimage.com/178x182.png/ff4444/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1020,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Anabal Baxill',
@@ -4203,6 +4498,13 @@ var data = {
               'score': {
                 'tech': 1245,
                 'hse': 1167
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
               }
             }
           ]
@@ -4232,6 +4534,13 @@ var data = {
                 'tech': 1505,
                 'hse': 779
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -4260,6 +4569,13 @@ var data = {
                 'tech': 1517,
                 'hse': 1051
               }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
+              }
             }
           ]
         },
@@ -4267,7 +4583,35 @@ var data = {
           'name': 'Nelie Ghent',
           'photo': 'http://dummyimage.com/178x106.png/cc0000/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+          {
+              'number': 1,
+              'score': {
+                'tech': 1767,
+                'hse': 972
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1130,
+                'hse': 1003
+              }
+            },
+            {
+              'number': 3,
+              'score': {
+                'tech': 1566,
+                'hse': 742
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1020,
+                'hse': 1153
+              }
+            }]
         },
         {
           'name': 'Vanessa Folger',
@@ -4293,6 +4637,13 @@ var data = {
               'score': {
                 'tech': 1368,
                 'hse': 638
+              }
+            },
+            {
+              'number': 4,
+              'score': {
+                'tech': 1157,
+                'hse': 1146
               }
             }
           ]
