@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="683px" height="480px" viewBox="0 0 683 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>cl</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 682.67 0 682.67 512 0 512"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cl">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Shape"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <polygon id="Shape" fill="#FFFFFF" points="239.990625 0 720 0 720 240 239.990625 240"></polygon>
+                <polygon id="Shape" fill="#0039A6" points="0 0 240 0 240 240 0 240"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" points="157.33125 179.728125 120.156562 151.849688 83.1646875 180.002813 96.9215625 134.252813 59.9971875 106.003125 105.679688 105.609375 119.85 60 134.322188 105.503438 180.004688 105.563437 143.269688 134.080312 157.332188 179.727188"></polygon>
+                <polygon id="Shape" fill="#D52B1E" points="0 240 720 240 720 480 0 480"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

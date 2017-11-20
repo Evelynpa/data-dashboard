@@ -127,5 +127,122 @@ function drawBasic() {
     toggleLima.addEventListener('click',function(){
       subMenuLima.classList.toggle('mostrar');
     })
+    //Dashboard Ciudad de Arequipa
+    var toggleArequipa = document.getElementById("menu-arequipa");
+    subMenuArequipa = document.getElementById("subMenu-arequipa");
 
+    toggleArequipa.addEventListener('click',function(){
+      subMenuArequipa.classList.toggle('mostrar');
+    })
+//Añadir estudiante
+var toggleAnadir = document.getElementById("añadir");
+subMenuLink = document.getElementById("sub-link");
 
+toggleAnadir.addEventListener('click',function(){
+  subMenuLink.classList.toggle('mostrar');
+})
+
+//Añadir estudiante 2
+var toggleAnadir2 = document.getElementById("añadir-2");
+subMenuLink2 = document.getElementById("sub-link2");
+
+toggleAnadir2.addEventListener('click',function(){
+  subMenuLink2.classList.toggle('mostrar');
+})
+
+//Añadir estudiante 3
+var toggleAnadir3 = document.getElementById("añadir-3");
+subMenuLink3 = document.getElementById("sub-link3");
+
+toggleAnadir3.addEventListener('click',function(){
+  subMenuLink3.classList.toggle('mostrar');
+})
+
+//Promedio Niña 1 Tech - Hse
+//console.log(data['SCL']['2017-2']['students'][0]['sprints']);
+var student1 = data['SCL']['2017-2']['students'][0]['sprints'];
+var promedioTech = []; // un array vacio en donde irán los promedios Tech
+var promedioHse = [];
+for(var i = 0; i< student1.length;i++){ //recorre todo el data de sprints
+promedioTech.push(student1[i]['score']['tech']);
+promedioHse.push(student1[i]['score']['hse']);
+}
+//console.log(promedioTech);
+//console.log(promedioHse);
+var sumaTech = 0;
+var sumaHse = 0;
+for(var i = 0; i<promedioTech.length;i++){
+  sumaTech += promedioTech[i];
+}
+for(var i = 0; i<promedioHse.length;i++){
+  sumaHse += promedioHse[i];
+}
+//console.log(sumaTech);
+//console.log(sumaHse);
+
+//promedio Tech
+var totalTech = Math.round(((sumaTech/2)*100)/1800);
+
+//console.log(totalTech);
+var totalHse = Math.round(((sumaHse/2)*100)/1200);
+//console.log(totalHse);
+
+//Promedio Niña 2 Tech - Hse
+var student2 = data['SCL']['2017-2']['students'][1]['sprints'];
+var promedioTech1 = []; // un array vacio en donde irán los promedios Tech
+var promedioHse1 = [];
+for(var i = 0; i< student2.length;i++){ //recorre todo el data de sprints
+promedioTech1.push(student2[i]['score']['tech']);
+promedioHse1.push(student2[i]['score']['hse']);
+}
+//console.log(promedioTech);
+//console.log(promedioHse);
+var sumaTech1 = 0;
+var sumaHse1 = 0;
+for(var i = 0; i<promedioTech1.length;i++){
+  sumaTech1 += promedioTech1[i];
+}
+for(var i = 0; i<promedioHse.length;i++){
+  sumaHse1 += promedioHse1[i];
+}
+//console.log(sumaTech);
+//console.log(sumaHse);
+
+//promedio Tech
+var totalTech1 = Math.round(((sumaTech/2)*100)/1800);
+
+//console.log(totalTech);
+var totalHse1 = Math.round(((sumaHse/2)*100)/1200);
+//console.log(totalHse);
+
+//Promedio niña 3 
+var student3 = data['SCL']['2017-2']['students'][2]['sprints'];
+var promedioTech2 = []; // un array vacio en donde irán los promedios Tech
+var promedioHse2 = [];
+for(var i = 0; i< student3.length;i++){ //recorre todo el data de sprints
+promedioTech2.push(student3[i]['score']['tech']);
+promedioHse2.push(student3[i]['score']['hse']);
+}
+//console.log(promedioTech);
+//console.log(promedioHse);
+var sumaTech2 = 0;
+var sumaHse2 = 0;
+for(var i = 0; i<promedioTech2.length;i++){
+  sumaTech2 += promedioTech2[i];
+}
+for(var i = 0; i<promedioHse2.length;i++){
+  sumaHse2 += promedioHse2[i];
+}
+//console.log(sumaTech);
+//console.log(sumaHse);
+
+//promedio Tech
+var totalTech2 = Math.round(((sumaTech/2)*100)/1800);
+
+//console.log(totalTech);
+var totalHse2 = Math.round(((sumaHse/2)*100)/1200);
+//console.log(totalHse);
+//alumna 1
+var tech1 = document.getElementById('tech-1');
+tech1.textContent = totalTech + ' %'
+var hse1 = document.getElementById('hse-1');
