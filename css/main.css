@@ -459,8 +459,9 @@ html,body{
 .logo{
     width: 150px;	
     position: relative;
-    margin-left: 30px;
-    margin-right: 36px;
+    top: 0;
+    left: 0px;
+    right: 36px;
 }
 #idioma{
     color: #fff;
