@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-   <nav class="navbar navbar-inverse" id="container-1">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="assets/images/logo-2.png" alt="logo" class="logo"></a>
-    </div>
+    <div class="white">
+     <nav class="navbar navbar-inverse" id="container-1">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo-2.png" alt="logo" class="logo"></a>
+      </div>
     <ul class="nav navbar-nav">
       <li  id="home"><a href="#">Home</a></li>
       <li  id="estudiantes"><a href="student.html">Estudiantes</a></li>
@@ -46,10 +47,11 @@
     </ul>
   </div>
 </nav>
+</div>
 <div id="menuHorizontal">
   <ul id="sidebar" class="nav nav-pills nav-stacked" style="max-width: 250px;">
-      <li><a href="#" id="perfil"><img src="assets/images/foto_perfil.png" alt="" class="cicle"><p class="name">Valentina Smith</p></a></li>
-      <li class="menu-1" id="menu-1"><a href="#" >Dashboard Santiago de Chile   <span i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
+      <li id="perfil"><a href="#"><img src="assets/images/foto_perfil.png" alt="perfil" class="cicle"><p class="name">Valentina Smith</p></a></li>
+      <li class="menu-1" id="menu-1"><a href="#" >Dashboard Santiago de Chile&nbsp;&nbsp;<span i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
         <ul class="sub-menu" id="sub-menu">
           <li class="menu-2"><a href="#" class="menu_link">2015-l</a></li>
           <li class="menu-2"><a href="#" class="menu_link">2016-l</a></li>
@@ -63,7 +65,7 @@
             </ul>
           </li>
         </ul>
-      <li class="menu-mexico" id="menu-mexico"><a href="dashboardCDMX.html">Dashboard Ciudad de México   <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
+      <li class="menu-mexico" id="menu-mexico"><a href="#">Dashboard Ciudad de México&nbsp;<span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
       <ul class="sub-menu" id="subMenu-mexico">
           <li class="menu-2"><a href="#" class="menu_link">2015-l</a></li>
           <li class="menu-2"><a href="#" class="menu_link">2016-l</a></li>
@@ -71,7 +73,7 @@
           <li class="menu-2"><a href="#" class="menu_link">2017-l</a></li>
           <li class="menu-2"><a href="#" class="menu_link">2017-l</a></li>
         </ul>
-      <li class="menu-lima" id="menu-lima"><a href="dashboardLIM.html">Dashboard Lima   <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
+      <li class="menu-lima" id="menu-lima"><a href="#">Dashboard Lima&nbsp;&nbsp;<span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
       <ul class="sub-menu" id="subMenu-lima">
           <li class="menu-2"><a href="#" class="menu_link">2015-l</a></li>
           <li class="menu-2"><a href="#" class="menu_link">2015-ll</a></li>
@@ -80,7 +82,7 @@
           <li class="menu-2"><a href="#" class="menu_link">2017-l</a></li>
           <li class="menu-2"><a href="#" class="menu_link">2017-l</a></li>
         </ul>
-      <li class="menu-arequipa" id="menu-arequipa"><a href="dashboardAQP.html">Dashboard Arequipa   <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
+      <li class="menu-arequipa" id="menu-arequipa"><a href="#">Dashboard Arequipa&nbsp;&nbsp;<span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
       <ul class="sub-menu" id="subMenu-arequipa">
         <li class="menu-2"><a href="#" class="menu_link">2015-l</a></li>
         <li class="menu-2"><a href="#" class="menu_link">2016-l</a></li>
@@ -88,7 +90,7 @@
         <li class="menu-2"><a href="#" class="menu_link">2017-l</a></li>
         <li class="menu-2"><a href="#" class="menu_link">2017-l</a></li>
       </ul>
-      <li><a href="#"><span><i class="fa fa-sticky-note" aria-hidden="true"></i></span>  Mis Notas</a></li>
+      <li><a href="#"><span><i class="fa fa-sticky-note" aria-hidden="true"></i></span>&nbsp;&nbsp;Mis Notas</a></li>
   </ul>
 </div>
 <div class="contenedor">
@@ -101,12 +103,56 @@
     <div id="graphicDesert"></div>
   </div>
    <div class="graphic bigGraphic">
-      <h3><b>LOGRO</b></h3>
+      <h3><b>LOGROS</b></h3>
+      <h4>Sede Santiago 2017-1</h4>
       <div id="graphicLogro"></div>
   </div>
   <div class="graphic bigGraphic">
       <h3><b>Net Promoter Score (NPS)</b></h3>
+      <h4>Sede Santiago 2017-1</h4>
+      <div class="cuadroNps">
+      <label for="nps1" id="nps1"></label>
+      <label for="nps2" id="nps2"></label>
+      <label for="nps3" id="nps3"></label>
+      <label for="nps4" id="nps4"></label>
+      </div>
       <div id="graphicNps"></div>
+  </div>
+  <div class="graphic bigGraphic">
+      <h3><b>Net Promoter Score (NPS)</b></h3>
+      <h4>Sede Santiago 2017-2</h4>
+      <div class="cuadroNps">
+      <label for="nps5" id="nps5"></label>
+      <label for="nps6" id="nps6"></label>
+      </div>
+      <div id="graphicNps2"></div>
+  </div>
+  <div class="graphic bigGraphic">
+      <h3><b>Satisfación de Estudiantes</b></h3>
+      <h4>Sede Santiago 2017-2</h4>
+      <div class="cuadroNps">
+        <label for="student" class="student"><b>92.5 % </b></label>
+        <label for="student">promedio de cuatro sprints</label>
+      </div>
+      <div id="studentSatisfaction"></div>
+  </div>
+  <div class="graphic bigGraphic">
+      <h3><b>Calificación del Profesor</b></h3>
+      <h4>Sede Santiago 2017-2</h4>
+      <div class="cuadroNps">
+        <label for="student" class="student"><b>3.8</b></label>
+        <label for="student">promedio general</label>
+      </div>
+      <div id="teacherRating"></div>
+  </div>
+  <div class="graphic bigGraphic">
+      <h3><b>Calificación del Jedi</b></h3>
+      <h4>Sede Santiago 2017-2</h4>
+      <div class="cuadroNps" id="jedi">
+        <label for="student" class="student"><b>4.0</b></label>
+        <label for="student">promedio general</label>
+      </div>
+      <div id="jediRating"></div>
   </div>
 </div>
  

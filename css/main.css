@@ -1,5 +1,4 @@
 html,body{
-	
 	margin:0px;
 	
 	height:100%;
@@ -45,41 +44,39 @@ html,body{
 	#idioma:hover{
 		background-color: #F9A91A;
 	}
-	
 	/* Nav vertical */
-	#menuHorizontal{
-		 background: linear-gradient( rgba(52, 52, 52, 0.7),#333);
-		display: inline-block;
-		position: fixed;
-		width: 250px;
-		top: 50px;
-		height: 100%
+#menuHorizontal{
+	 background: linear-gradient( rgba(52, 52, 52, 0.7),#333);
+	display: inline-block;
+    position: fixed;
+    width: 250px;
+    top: 50px;
+    height: 100%
+}
+#sidebar {
+    
+    padding: 10px;
+    display: inline-block;
+    position: fixed;
+    top: 50px;
+}
+
+#sidebar a:hover, a:focus {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#sidebar.nav > li > a,
+#sidebar.nav > li > a:link {
+    border-radius: 5px;
+    color: #FFF;
+    height: 100%;
+}
+
+#sidebar.nav > li > a:hover,
+#sidebar.nav > li > a:focus {
+    background-color: #F9A91A;
 	}
-	#sidebar {
-		
-		padding: 10px;
-		display: inline-block;
-		position: fixed;
-		top: 50px;
-	}
-	
-	#sidebar a:hover, a:focus {
-		color: #FFF;
-		text-decoration: none;
-	}
-	
-	#sidebar.nav > li > a,
-	#sidebar.nav > li > a:link {
-		border-radius: 5px;
-		color: #FFF;
-		height: 100%;
-	}
-	
-	#sidebar.nav > li > a:hover,
-	#sidebar.nav > li > a:focus {
-		background-color: #F9A91A;
-	}
-	
 	#sidebar.nav-pills > li.active > a,
 	#sidebar.nav-pills > li.active > a:hover,
 	#sidebar.nav-pills > li.active > a:focus {
@@ -114,7 +111,6 @@ html,body{
 		list-style: none;
 	}
 	#sub-menu2017{
-		 background-color: rgba(52, 52, 52, 0.8);
 		padding-left: 0;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -431,6 +427,49 @@ html,body{
 	margin: 5px;
 	border: none;
 }
+/*Nav Horizontal */
+#container-1{
+   background: linear-gradient(#333, rgba(52, 52, 52, 0.7));
+    border: none;
+    border-radius: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+}
+.white{
+	
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 2;
+}
+#home a{
+    color: #fff;
+}
+#home a:hover{
+    background-color: #F9A91A;
+}
+#icono{
+    color: #fff;
+}
+#icono:hover{
+    background-color: #F9A91A;
+}
+.logo{
+    width: 150px;	
+    position: relative;
+    margin-left: 30px;
+    margin-right: 36px;
+}
+#idioma{
+    color: #fff;
+}
+#idioma:hover{
+    background-color: #F9A91A;
+}
+
+
 .buscadorContenedor .fa-search{
 	color: #1c2e36;
 	margin: 10px;
@@ -444,7 +483,67 @@ html,body{
 	position: relative;
 	padding: 25px;
 	box-sizing: content-box;
+    margin: 20px;
+    right: 15px;
+}
+
+.name{
+    color:#fff;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+}
+.sub-menu{
 	
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+#sub-menu2017{
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.menu_link{
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 3rem;
+	padding: 0 1em;
+	display: block;
+	max-height: 0;
+	overflow: hidden;
+	box-shadow: 0 1px rgba(0,0,0,.2);
+	transition: all .5s;
+}
+.menu_link2017{
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 3rem;
+	padding: 0 1em;
+	display: block;
+	max-height: 0; 
+	overflow: hidden;
+	box-shadow: 0 1px rgba(0,0,0,.2);
+	transition: all .5s;
+}
+.mostrar .menu_link{
+	max-height: 3rem;
+}
+.mostrar2017 .menu_link2017{
+	max-height: 3rem;
+}
+.menu-1{
+	 
+	text-align: center;
+	color: #eee;
+	line-height: 2.5;
+	cursor: pointer;
+}
+#sub-menu .menu-2 .menu_link{
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 .imagen-2{
 	width: 75px;
@@ -456,6 +555,38 @@ html,body{
 	top: 280px;
     left: 430px;
 
+}
+
+#sub-menu .menu-2 .menu_link:hover{
+    color: #F9A91A;
+}
+
+#notificaion:hover{
+    background-color: #F9A91A;
+}
+#sub-menu2017 .menu_link2017:hover{
+	color: #F9A91A;
+}
+#subMenu-mexico .menu_link:hover{
+	color: #F9A91A;
+}
+#subMenu-lima .menu_link:hover{
+	color: #F9A91A;
+}
+#subMenu-arequipa .menu_link:hover{
+	color: #F9A91A;
+}
+#estudiantes a{
+    color: #fff;
+}
+#estudiantes a:hover{
+    background-color: #F9A91A;
+}
+#profesores a{
+    color: #fff;
+}
+#profesores a:hover{
+    background-color: #F9A91A;
 }
 .contenedorTeacher{
 	background-color: #fff;
@@ -540,5 +671,4 @@ html,body{
 	position: absolute;
 	bottom: -20px;
     left: 935px;
-
 }

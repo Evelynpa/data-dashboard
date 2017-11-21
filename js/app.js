@@ -8,6 +8,7 @@
   
   var aqp2016 = data['AQP']['2016-2']['students'].length;
   var aqp2017 = data['AQP']['2017-1']['students'].length;
+  var aqp20172 = data['AQP']['2017-2']['students'].length;//ACTUAL
 
   var cdmx1 = data['CDMX']['2017-1']['students'].length;
   var cdmx2 = data['CDMX']['2017-2']['students'].length;//ACTUAL
@@ -20,7 +21,7 @@
   var scl1 = data['SCL']['2017-1']['students'].length;
   var scl2 = data['SCL']['2017-2']['students'].length;//ACTUAL
 
-  var result = cdmx2+lim2+scl2;
+  var result = cdmx2+lim2+scl2+aqp20172;
 
 // Load the Visualization API and the corechart package.
 google.charts.load('current', {packages:['corechart']});
@@ -31,7 +32,7 @@ function dibujar() {
 // Create the data table.
      var data = google.visualization.arrayToDataTable([
           ['Sede', '2016-2', '2017-1', '2017-2'],
-          ['AQP', aqp2016, aqp2017, 0],
+          ['AQP', aqp2016, aqp2017, aqp20172],
           ['CDMX', 0, cdmx1, cdmx2],
           ['LIM', lim2016, lim1, lim2],
           ['SCL', scl2016, scl1, scl2]
@@ -48,7 +49,9 @@ function dibujar() {
          vAxis: {
           title: 'Cantidad'
         },
-     'bar': { groupWidth: '80%' }};
+        'bar': { groupWidth: '80%' },
+        colors: ['#3366ff', '#b366ff','#4da6ff']
+      };
 
         // Instantiate and draw our chart, passing in some options.
 
@@ -59,12 +62,14 @@ function dibujar() {
       /******************************************************************************************/
       //PORCENTAJE DE DESERCION DE LAS GENERACIONES ACTUALES
         var desert = [];
-
+        var aqp2des =[] ;//ACTUAL
         var cdmx2des =[] ;//ACTUAL
         var lim2des =[] ;//ACTUAL
         var scl2des = [];//ACTUAL
 
-
+        for(var i =0;  i < data['AQP']['2017-2']['students'].length ;i++){
+          aqp2des.push(data['AQP']['2017-2']['students'][i]['active']);//AGREGO UN ARRAY SOLO DE LOS ACTIVE
+        }
         for(var i =0;  i < data['CDMX']['2017-2']['students'].length ;i++){
           cdmx2des.push(data['CDMX']['2017-2']['students'][i]['active']);//AGREGO UN ARRAY SOLO DE LOS ACTIVE
         }
@@ -74,11 +79,15 @@ function dibujar() {
          for(var i =0;  i < data['SCL']['2017-2']['students'].length ;i++){
           scl2des.push(data['SCL']['2017-2']['students'][i]['active']);//AGREGO UN ARRAY SOLO DE LOS ACTIVE
         }
-
+        var aqp = [];
         var mex=[];
         var per=[];
         var cl=[];
 
+        for(var i=0; i<aqp2des.length;i++){
+          if(aqp2des[i]===false)
+        aqp.push(aqp2des[i]);//AGREGO UN ARRAY SOLO DE LOS ACTIVE = FALSE DE CDMX
+        }
         for(var i=0; i<cdmx2des.length;i++){
           if(cdmx2des[i]===false)
         mex.push(cdmx2des[i]);//AGREGO UN ARRAY SOLO DE LOS ACTIVE = FALSE DE CDMX
@@ -91,7 +100,7 @@ function dibujar() {
           if(scl2des[i]===false)
           cl.push(i);//AGREGO UN ARRAY SOLO DE LOS ACTIVE = FALSE DE SCL
         }
-        var nums = mex.concat(per, cl); //CONCATENO CADA ARRAY QUE SE CREÓ
+        var nums = mex.concat(per, cl, aqp); //CONCATENO CADA ARRAY QUE SE CREÓ
         var numb = nums.length;//OBTENGO EL LARGO DEL ARRAY
         var total = Math.round((numb * 100)/result);//SACO EL PORCENTAJE DE ACUERDO A LAS ESTUDIANTES ACTUALES
 
@@ -104,7 +113,7 @@ function drawBasic() {
       data.addColumn('string', 'Total');
   data.addColumn('number', 'Sede ');
   data.addRows([
-    ['Sede AQP', 0],
+    ['Sede AQP', aqp.length],
     ['Sede CDMX', mex.length],
     ['Sede LIM', per.length],
     ['Sede SCL', cl.length]
@@ -117,10 +126,10 @@ function drawBasic() {
         'height':300,
         'is3D': true,
         slices: {
-            0: { color: 'yellow' },
-            1: { color: 'pink' },
-            2: { color: 'blue' },
-            3: { color: 'purple' }
+            0: { color: '#ff80ff' },
+            1: { color: '#3366ff' },
+            2: { color: '#b366ff' },
+            3: { color: '#4da6ff' }
           },
      'bar': { groupWidth: '80%' }};
 
@@ -293,13 +302,13 @@ function achievement() {
         ]);
 
     var options = {
-      title : 'Sede Santiago  2017-1',
-      legend: { position: 'top' },
+      legend: { position: 'top' , textStyle: {color: '#1c2e36 '}},
       vAxis: {title: 'Porcentaje (%)'},
       hAxis: {title: 'Sprints (turno AM)'},
       seriesType: 'bars',
       'width':1000,
-      'height':300
+      'height':300,
+       colors: ['#3366ff', '#b366ff']//#3366ff', '#b366ff','#4da6ff'
     };
 
         // Instantiate and draw our chart, passing in some options.
@@ -310,46 +319,232 @@ function achievement() {
 
 /****************************************************************************************************/
 //El Net Promoter Score (NPS) promedio de los sprints cursados. 
+//SPRINT 1
 var promotersSprint1 = data['SCL']['2017-1']['ratings'][0]['nps']['promoters'];
 var passiveSprint1 = data['SCL']['2017-1']['ratings'][0]['nps']['passive'];
 var detractorsSprint1 = data['SCL']['2017-1']['ratings'][0]['nps']['detractors'];
-console.log(promotersSprint1);
-console.log(passiveSprint1);
-console.log(detractorsSprint1);
+var label1 = document.getElementById('nps1');
+var nps1 = ((promotersSprint1 - detractorsSprint1)*100)/100;
+label1.textContent = 'NPS Sprint 1: ' + nps1 + '%';
+//SPRINT 2
+var promotersSprint2 = data['SCL']['2017-1']['ratings'][1]['nps']['promoters'];
+var passiveSprint2 = data['SCL']['2017-1']['ratings'][1]['nps']['passive'];
+var detractorsSprint2 = data['SCL']['2017-1']['ratings'][1]['nps']['detractors'];
+var label2 = document.getElementById('nps2');
+var nps2 = ((promotersSprint2 - detractorsSprint2)*100)/100;
+label2.textContent = 'NPS Sprint 2: ' + nps2 + '%';
+//SPRINT 3
+var promotersSprint3 = data['SCL']['2017-1']['ratings'][2]['nps']['promoters'];
+var passiveSprint3 = data['SCL']['2017-1']['ratings'][2]['nps']['passive'];
+var detractorsSprint3 = data['SCL']['2017-1']['ratings'][2]['nps']['detractors'];
+var label3 = document.getElementById('nps3');
+var nps3 = ((promotersSprint3 - detractorsSprint3)*100)/100;
+label3.textContent = 'NPS Sprint 3: ' + nps3 + '%';
+//SPRINT 4
+var promotersSprint4 = data['SCL']['2017-1']['ratings'][3]['nps']['promoters'];
+var passiveSprint4 = data['SCL']['2017-1']['ratings'][3]['nps']['passive'];
+var detractorsSprint4 = data['SCL']['2017-1']['ratings'][3]['nps']['detractors'];
+var label4 = document.getElementById('nps4');
+var nps4 = ((promotersSprint4 - detractorsSprint4)*100)/100;
+label4.textContent = 'NPS Sprint 4: ' + nps4 + '%';
 
+//SUMA TOTAL
+var resultNps1 = promotersSprint1 + passiveSprint1 + detractorsSprint1;//SPRINT 1
+var resultNps2 = promotersSprint2 + passiveSprint2 + detractorsSprint2;//SPRINT 2
+var resultNps3 = promotersSprint3 + passiveSprint3 + detractorsSprint3;//SPRINT 3
+var resultNps4 = promotersSprint4 + passiveSprint4 + detractorsSprint4;//SPRINT 4
 
+//PROMEDIO EN PORCENTAJE
+var respProm1 = (promotersSprint1/resultNps1)*100;//SPRINT 1
+var respProm2 = (promotersSprint2/resultNps2)*100;//SPRINT 1
+var respProm3 = (promotersSprint3/resultNps3)*100;//SPRINT 1
+var respProm4 = (promotersSprint4/resultNps4)*100;//SPRINT 1
 
 google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(npsGraphic);
-      function npsGraphic() {
-        var data = google.visualization.arrayToDataTable([
-          ['Language', 'Speakers (in millions)'],
-          ['Assamese', 13], ['Bengali', 83], ['Bodo', 1.4],
-          ['Dogri', 2.3], ['Gujarati', 46], ['Hindi', 300],
-          ['Kannada', 38], ['Kashmiri', 5.5], ['Konkani', 5],
-          ['Maithili', 20], ['Malayalam', 33], ['Manipuri', 1.5],
-          ['Marathi', 72], ['Nepali', 2.9], ['Oriya', 33],
-          ['Punjabi', 29], ['Sanskrit', 0.01], ['Santhali', 6.5],
-          ['Sindhi', 2.5], ['Tamil', 61], ['Telugu', 74], ['Urdu', 52]
+      google.charts.setOnLoadCallback(npsGraphic1);
+      function npsGraphic1() {
+         var data = google.visualization.arrayToDataTable([
+          ['Sprint', 'Promoters', 'Passive', 'Detractors'],
+          ['Sprint 1', promotersSprint1, passiveSprint1, detractorsSprint1],
+          ['Sprint 2', promotersSprint2, passiveSprint2, detractorsSprint2],
+          ['Sprint 3', promotersSprint3, passiveSprint3, detractorsSprint3],
+          ['Sprint 4', promotersSprint4, passiveSprint4, detractorsSprint4]
         ]);
 
+    // Set chart options
         var options = {
-          title: 'Indian Language Use',
-          legend: 'none',
-          pieSliceText: 'label',
-          slices: {  4: {offset: 0.2},
-                    12: {offset: 0.3},
-                    14: {offset: 0.4},
-                    15: {offset: 0.5},
-          },
-          'width':1000,
-      'height':300
-        };
+            'width':490,
+            'height':300,
+            legend: { position: 'top' },
+            hAxis: {
+              title: 'Sprints'
+            },
+             vAxis: {
+              title: 'Porcentaje (%)'
+            },
+            'bar': { groupWidth: '90%' },
+            colors: ['#3366ff', '#b366ff','#ff6666']//#3366ff',,'#4da6ff' '#b366ff','#4da6ff'
+          };
 
-        var chart = new google.visualization.PieChart(document.getElementById('graphicNps'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('graphicNps'));
         chart.draw(data, options);
       }
+
 /********************************************************************************************************/
+//El Net Promoter Score (NPS) promedio de los sprints cursados. 
+//SPRINT 1
+var promotersSprint5 = data['SCL']['2017-2']['ratings'][0]['nps']['promoters'];
+var passiveSprint5 = data['SCL']['2017-2']['ratings'][0]['nps']['passive'];
+var detractorsSprint5 = data['SCL']['2017-2']['ratings'][0]['nps']['detractors'];
+var label5 = document.getElementById('nps5');
+var nps5 = ((promotersSprint5 - detractorsSprint5)*100)/100;
+label5.textContent = 'NPS Sprint 1: ' + nps5 + '%';
+//SPRINT 2
+var promotersSprint6 = data['SCL']['2017-2']['ratings'][1]['nps']['promoters'];
+var passiveSprint6 = data['SCL']['2017-2']['ratings'][1]['nps']['passive'];
+var detractorsSprint6 = data['SCL']['2017-2']['ratings'][1]['nps']['detractors'];
+var label6 = document.getElementById('nps6');
+var nps6 = ((promotersSprint6 - detractorsSprint6)*100)/100;
+label6.textContent = 'NPS Sprint 2: ' + nps6 + '%';
+
+//SUMA TOTAL
+var resultNps5 = promotersSprint5 + passiveSprint5 + detractorsSprint5;//SPRINT 1
+var resultNps6 = promotersSprint6 + passiveSprint6 + detractorsSprint6;//SPRINT 2
+
+//PROMEDIO EN PORCENTAJE
+var respProm1 = (promotersSprint1/resultNps1)*100;//SPRINT 1
+var respProm2 = (promotersSprint2/resultNps2)*100;//SPRINT 1
+
+google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(npsGraphic2);
+      function npsGraphic2() {
+         var data = google.visualization.arrayToDataTable([
+          ['Sprint', 'Promoters', 'Passive', 'Detractors'],
+          ['Sprint 1', promotersSprint5, passiveSprint5, detractorsSprint5],
+          ['Sprint 2', promotersSprint6, passiveSprint6, detractorsSprint6]
+        ]);
+
+    // Set chart options
+        var options = {
+        'width':490,
+        'height':300,
+        legend: { position: 'top' },
+        hAxis: {
+          title: 'Sprints'
+        },
+         vAxis: {
+          title: 'Porcentaje (%)'
+        },
+     'bar': { groupWidth: '90%' },
+     colors: ['#3366ff', '#b366ff','#ff6666']
+   };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('graphicNps2'));
+        chart.draw(data, options);
+      }
+/**********************************************************************************************************/
+google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(studentSatisfaction);
+    function studentSatisfaction() {
+      var data = google.visualization.arrayToDataTable([
+        ["Sprints", "Student", { role: "style" }],
+        ["Sprint 1", 98.94, '#3366ff'],
+        ["Sprint 2", 90.49, '#3366ff'],
+        ["Sprint 3", 89.30, '#3366ff'],
+        ["Sprint 4", 91.45, '#3366ff']
+      ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+      var options = {
+        width: 490,
+        height: 300,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+        hAxis: {
+              title: 'Sprints'
+            },
+             vAxis: {
+              title: 'Puntaje (%)'
+            }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("studentSatisfaction"));
+      chart.draw(view, options);
+  }
+/****************************************************************************************************************/
+google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(teacherRating);
+    function teacherRating() {
+      var data = google.visualization.arrayToDataTable([
+        ["Sprints", "Teacher", { role: "style" }],
+        ["Sprint 1", 3.9, '#b366ff'],
+        ["Sprint 2", 4.0, '#b366ff'],
+        ["Sprint 3", 3.7, '#b366ff'],
+        ["Sprint 4", 3.6, '#b366ff']
+      ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        width: 490,
+        height: 300,
+        bar: {groupWidth: "80%"},
+        legend: { position: "none" },
+        hAxis: {
+              title: 'Sprints'
+            },
+             vAxis: {
+              title: 'Puntaje'
+            }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("teacherRating"));
+      chart.draw(view, options);
+  }
+/****************************************************************************************************************/
+google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(jediRating);
+    function jediRating() {
+       var data = google.visualization.arrayToDataTable([
+        ["Sprints", "Jedi", { role: "style" }],
+        ["Sprint 1", 4.1, '#3366ff'],
+        ["Sprint 2", 3.7, '#4da6ff'],
+        ["Sprint 3", 3.8, '#3366ff'],
+        ["Sprint 4", 4.5, '#4da6ff']
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        width: 1000,
+        height: 300,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+        hAxis: {
+              title: 'Sprints'
+            },
+             vAxis: {
+              title: 'Puntaje'
+            }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("jediRating"));
+      chart.draw(view, options);
+  }
+/****************************************************************************************************************/
     var menuAm = document.getElementById("am");
     var menuPm = document.getElementById("pm");
     //dashboard Chile - Mostrar y esconder 
@@ -424,7 +619,7 @@ for(var i = 0; i< student1.length;i++){ //recorre todo el data de sprints
 promedioTech.push(student1[i]['score']['tech']);
 promedioHse.push(student1[i]['score']['hse']);
 }
-//console.log(promedioTech);
+console.log(data['SCL']['2017-2']['students'][0]['sprints']);
 //console.log(promedioHse);
 var sumaTech = 0;
 var sumaHse = 0;
@@ -434,8 +629,8 @@ for(var i = 0; i<promedioTech.length;i++){
 for(var i = 0; i<promedioHse.length;i++){
   sumaHse += promedioHse[i];
 }
-//console.log(sumaTech);
-//console.log(sumaHse);
+console.log(sumaTech);
+console.log(sumaHse);
 
 //promedio Tech
 var totalTech = Math.round(((sumaTech/2)*100)/1800);

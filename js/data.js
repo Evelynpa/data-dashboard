@@ -1061,6 +1061,603 @@ var data = {
           'jedi': 4.1
         }
       ]
+    },
+    '2017-2': {
+      'students': [
+        {
+          'name': 'Katharina Ponton',
+          'photo': 'http://dummyimage.com/206x204.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1006,
+                'hse': 730
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1015,
+                'hse': 1145
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Hephzibah Poschel',
+          'photo': 'http://dummyimage.com/171x236.png/cc0000/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1326,
+                'hse': 839
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1503,
+                'hse': 1007
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Brigit Wildsmith',
+          'photo': 'http://dummyimage.com/232x187.png/5fa2dd/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Ericka Carnilian',
+          'photo': 'http://dummyimage.com/106x168.png/5fa2dd/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1218,
+                'hse': 756
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1261,
+                'hse': 849
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Chantal Biernacki',
+          'photo': 'http://dummyimage.com/124x200.png/5fa2dd/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1035,
+                'hse': 622
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1067,
+                'hse': 1097
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Chelsey Crackett',
+          'photo': 'http://dummyimage.com/212x115.png/5fa2dd/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Bernadene Van Der Straaten',
+          'photo': 'http://dummyimage.com/229x246.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1401,
+                'hse': 754
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1501,
+                'hse': 871
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Merry Seleway',
+          'photo': 'http://dummyimage.com/235x163.png/5fa2dd/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Tana Dodding',
+          'photo': 'http://dummyimage.com/109x141.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Guendolen Kuhnwald',
+          'photo': 'http://dummyimage.com/157x176.png/cc0000/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1206,
+                'hse': 849
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1378,
+                'hse': 942
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Henriette Graddon',
+          'photo': 'http://dummyimage.com/223x206.png/ff4444/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Odille Moncaster',
+          'photo': 'http://dummyimage.com/133x126.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Babs Bartoli',
+          'photo': 'http://dummyimage.com/209x164.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Janeva Archibald',
+          'photo': 'http://dummyimage.com/110x173.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Starla Wibrew',
+          'photo': 'http://dummyimage.com/243x189.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Petra Berceros',
+          'photo': 'http://dummyimage.com/179x193.png/ff4444/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Anitra Degoe',
+          'photo': 'http://dummyimage.com/144x220.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 952,
+                'hse': 878
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1465,
+                'hse': 637
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Jo ann Kniveton',
+          'photo': 'http://dummyimage.com/180x223.png/5fa2dd/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1197,
+                'hse': 1122
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1579,
+                'hse': 1083
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Alice Gerg',
+          'photo': 'http://dummyimage.com/190x244.png/cc0000/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1378,
+                'hse': 698
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1561,
+                'hse': 1031
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Dawn Lathee',
+          'photo': 'http://dummyimage.com/112x169.png/ff4444/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1575,
+                'hse': 1194
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1529,
+                'hse': 856
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Nixie Baskeyfield',
+          'photo': 'http://dummyimage.com/220x118.png/cc0000/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1246,
+                'hse': 841
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1619,
+                'hse': 957
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Aveline Buckie',
+          'photo': 'http://dummyimage.com/178x133.png/cc0000/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Annalee Zoren',
+          'photo': 'http://dummyimage.com/227x207.png/ff4444/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1050,
+                'hse': 764
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1561,
+                'hse': 624
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Tandi Pering',
+          'photo': 'http://dummyimage.com/216x211.png/ff4444/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Cris Stoakes',
+          'photo': 'http://dummyimage.com/172x105.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1078,
+                'hse': 736
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1076,
+                'hse': 1069
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Idell Matchett',
+          'photo': 'http://dummyimage.com/247x229.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Janeta Windous',
+          'photo': 'http://dummyimage.com/135x205.png/cc0000/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Lacie Dakers',
+          'photo': 'http://dummyimage.com/227x232.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1782,
+                'hse': 1113
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 996,
+                'hse': 932
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Fifi Youd',
+          'photo': 'http://dummyimage.com/208x182.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1213,
+                'hse': 875
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 901,
+                'hse': 747
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Vera Bigg',
+          'photo': 'http://dummyimage.com/128x196.png/ff4444/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 968,
+                'hse': 879
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1137,
+                'hse': 718
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Ranice Denisovo',
+          'photo': 'http://dummyimage.com/192x145.png/ff4444/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Leland O\'Dunniom',
+          'photo': 'http://dummyimage.com/209x199.png/cc0000/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1533,
+                'hse': 932
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1349,
+                'hse': 904
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Andy Warlowe',
+          'photo': 'http://dummyimage.com/127x244.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1274,
+                'hse': 824
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1064,
+                'hse': 698
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Fredrika Camosso',
+          'photo': 'http://dummyimage.com/240x172.png/cc0000/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Hetty McAlindon',
+          'photo': 'http://dummyimage.com/165x184.png/5fa2dd/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1297,
+                'hse': 805
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1534,
+                'hse': 605
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Francisca Gibke',
+          'photo': 'http://dummyimage.com/103x204.png/ff4444/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Bliss Gligoraci',
+          'photo': 'http://dummyimage.com/122x125.png/dddddd/000000',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1122,
+                'hse': 870
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1427,
+                'hse': 763
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Rochelle Quarlis',
+          'photo': 'http://dummyimage.com/151x164.png/dddddd/000000',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Dorthea Ricoald',
+          'photo': 'http://dummyimage.com/203x178.png/cc0000/ffffff',
+          'active': false,
+          'sprints': []
+        },
+        {
+          'name': 'Sadye Buller',
+          'photo': 'http://dummyimage.com/185x164.png/ff4444/ffffff',
+          'active': true,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 942,
+                'hse': 770
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1542,
+                'hse': 801
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Lilly Nabarro',
+          'photo': 'http://dummyimage.com/175x173.png/cc0000/ffffff',
+          'active': false,
+          'sprints': []
+        }
+      ],
+      'ratings': [
+        {
+          'sprint': 1,
+          'nps': {
+            'promoters': 87,
+            'passive': 8,
+            'detractors': 5
+          },
+          'student': {
+            'no-cumple': 9,
+            'cumple': 82,
+            'supera': 9
+          },
+          'teacher': 4.4,
+          'jedi': 4.7
+        },
+        {
+          'sprint': 2,
+          'nps': {
+            'promoters': 97,
+            'passive': 3,
+            'detractors': 0
+          },
+          'student': {
+            'no-cumple': 6,
+            'cumple': 75,
+            'supera': 19
+          },
+          'teacher': 4.1,
+          'jedi': 4.2
+        }
+      ]
     }
   },
   'CDMX': {
@@ -1793,13 +2390,43 @@ var data = {
           'name': 'Julieta Readhead',
           'photo': 'http://dummyimage.com/119x227.png/ff4444/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1293,
+                'hse': 1015
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1701,
+                'hse': 1004
+              }
+            }
+          ]
         },
         {
           'name': 'Meg Bachellier',
           'photo': 'http://dummyimage.com/241x165.png/dddddd/000000',
           'active': false,
-          'sprints': []
+          'sprints': [
+{
+              'number': 1,
+              'score': {
+                'tech': 1093,
+                'hse': 915
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1661,
+                'hse': 804
+              }
+            }
+          ]
         },
         {
           'name': 'Katharina Ponton',
@@ -4694,6 +5321,21 @@ var data = {
           },
           'teacher': 4.6,
           'jedi': 4.1
+        },
+        {
+          'sprint': 4,
+          'nps': {
+            'promoters': 78,
+            'passive': 17,
+            'detractors': 5
+          },
+          'student': {
+            'no-cumple': 11,
+            'cumple': 73,
+            'supera': 16
+          },
+          'teacher': 4.6,
+          'jedi': 4.1
         }
       ]
     },
@@ -4766,7 +5408,22 @@ var data = {
           'name': 'Gretchen Gerhts',
           'photo': 'http://dummyimage.com/147x166.png/5fa2dd/ffffff',
           'active': false,
-          'sprints': []
+          'sprints': [
+{
+              'number': 1,
+              'score': {
+                'tech': 1093,
+                'hse': 915
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1661,
+                'hse': 804
+              }
+            }
+          ]
         },
         {
           'name': 'Judy Meindl',
