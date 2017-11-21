@@ -609,7 +609,8 @@ subMenuLink3 = document.getElementById("sub-link3");
 toggleAnadir3.addEventListener('click',function(){
   subMenuLink3.classList.toggle('mostrar');
 })
-
+/**********************************************************************/
+console.log(data['SCL']['2017-2']['students'][0]['sprints']);
 //Promedio Niña 1 Tech - Hse
 //console.log(data['SCL']['2017-2']['students'][0]['sprints']);
 var student1 = data['SCL']['2017-2']['students'][0]['sprints'];
@@ -619,7 +620,7 @@ for(var i = 0; i< student1.length;i++){ //recorre todo el data de sprints
 promedioTech.push(student1[i]['score']['tech']);
 promedioHse.push(student1[i]['score']['hse']);
 }
-console.log(data['SCL']['2017-2']['students'][0]['sprints']);
+
 //console.log(promedioHse);
 var sumaTech = 0;
 var sumaHse = 0;
@@ -633,10 +634,10 @@ console.log(sumaTech);
 console.log(sumaHse);
 
 //promedio Tech
-var totalTech = Math.round(((sumaTech/2)*100)/1800);
+var totalTechstud = Math.round(((sumaTech/2)*100)/1800);
 
 //console.log(totalTech);
-var totalHse = Math.round(((sumaHse/2)*100)/1200);
+var totalHseStud = Math.round(((sumaHse/2)*100)/1200);
 //console.log(totalHse);
 
 //Promedio Niña 2 Tech - Hse
@@ -661,10 +662,10 @@ for(var i = 0; i<promedioHse.length;i++){
 //console.log(sumaHse);
 
 //promedio Tech
-var totalTech1 = Math.round(((sumaTech1/2)*100)/1800);
+var totalTechstud1 = Math.round(((sumaTech1/2)*100)/1800);
 
 //console.log(totalTech);
-var totalHse1 = Math.round(((sumaHse1/2)*100)/1200);
+var totalHseStud1 = Math.round(((sumaHse1/2)*100)/1200);
 //console.log(totalHse);
 
 //Promedio niña 3 
@@ -689,23 +690,23 @@ for(var i = 0; i<promedioHse2.length;i++){
 //console.log(sumaHse);
 
 //promedio Tech
-var totalTech2 = Math.round(((sumaTech2/2)*100)/1800);
+var totalTechstud2 = Math.round(((sumaTech2/2)*100)/1800);
 
 //console.log(totalTech);
-var totalHse2 = Math.round(((sumaHse2/2)*100)/1200);
+var totalHseStud2 = Math.round(((sumaHse2/2)*100)/1200);
 //console.log(totalHse);
 //alumna 1
-var tech1 = document.getElementById('tech-1');
-tech1.textContent = totalTech + ' %';
-var hse1 = document.getElementById('hse-1');
-hse1.textContent = totalHse + ' %';
+var techStud1 = document.getElementById('tech-1');
+techStud1.textContent = totalTechstud + ' %';
+var hseStud1 = document.getElementById('hse-1');
+hseStud1.textContent = totalHseStud + ' %';
 //alumna 2
-var tech2 = document.getElementById('tech-2');
-tech2.textContent = totalTech1 + ' %';
-var hse2 = document.getElementById('hse-2');
-hse2.textContent = totalHse1 + ' %';
+var techStud2 = document.getElementById('tech-2');
+techStud2.textContent = totalTechstud1 + ' %';
+var hseStud2 = document.getElementById('hse-2');
+hseStud2.textContent = totalHseStud1 + ' %';
 //alumna 3
-var tech3 = document.getElementById('tech-3');
-tech3.textContent = totalTech2 + ' %';
-var hse3 = document.getElementById('hse-3');
-hse3.textContent = totalHse2 + ' %';
+var techStud3 = document.getElementById('tech-3');
+techStud3.textContent = totalTechstud2 + ' %';
+var hseStud3 = document.getElementById('hse-3');
+hseStud3.textContent = totalHseStud2 + ' %';
