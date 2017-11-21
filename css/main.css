@@ -673,3 +673,26 @@ html,body{
 	bottom: -20px;
     left: 935px;
 }
+/*labels de nps*/
+label{
+	display: block;
+	font-weight: lighter;
+	font-size: 12px;
+}
+.cuadroNps{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 35%;
+    display: inline-block;
+}
+h4{
+	text-align: center;
+}
+.student{
+	font-size: 30px;
+	text-align: center;
+}
+#jedi{
+	margin-left: 45%;
+}
