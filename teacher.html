@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Data Dashboard</title>
-   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
-  <link rel="icon" type="image/png" href="assets/images/apple-icon-57x57.png" />
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="icon" type="image/png" href="assets/images/apple-icon-57x57.png" />  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -21,18 +21,18 @@
     <ul class="nav navbar-nav">
       <li id="home"><a href="#">Home</a></li>
       <li id="estudiantes"><a href="student.html">Estudiantes</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="teacher.html" id="idioma">Profesores <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="idioma">Profesores <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="teacher.html">Mañana</a></li>
-          <li><a href="teacher.html">Tarde</a></li>
+          <li><a href="#">Mañana</a></li>
+          <li><a href="#">Tarde</a></li>
         </ul>
       </li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="notificaion"><span i class="fa fa-bell" aria-hidden="true"></span></a>
-        <ul class="dropdown-menu">
-          <li class="rendimiento"><a href="#">S2 Bajo Rendimiento</a></li>
+        <ul class="dropdown-menu" id="rendimiento">
+          <li><a href="#">S2 Bajo Rendimiento</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="idioma">Lenguaje<span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="idioma">Lenguaje <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Español</a></li>
           <li><a href="#">Ingles</a></li>
@@ -63,7 +63,7 @@
             </ul>
           </li>
         </ul>
-      <li class="menu-mexico" id="menu-mexico"><a href="#">Dashboard Ciudad de México   <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
+      <li class="menu-mexico" id="menu-mexico"><a href="dashboardCDMX.html">Dashboard Ciudad de México   <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a></li>
       <ul class="sub-menu" id="subMenu-mexico">
           <li class="menu-2"><a href="#" class="menu_link">2015-l</a></li>
           <li class="menu-2"><a href="#" class="menu_link">2016-l</a></li>
@@ -92,12 +92,51 @@
   </ul>
 </div>
 <div class="contenedor">
-<div id="chart_div"></div>
-  <div id="chart_div2"></div>
+    <div>
+      <h3 class="profesores">Profesores</h3>
+      <div class="buscadorContenedor"><i class="fa fa-search" aria-hidden="true"></i><input type="text" class="buscador-2"></div>
+      <div class="contenedorTeacher">
+        <img src="assets/images/teacher-belen.png" alt="" class="imagen">
+        <img src="assets/images/start-1.png" alt="" class="imagen-2">
+        <h4>Belén</h4>
+        <p class="nick">BBBelu</p>
+      <div class="correo">
+        <i class="fa fa-envelope" aria-hidden="true"></i> <p>belen@laboratoria.la</p>
+      </div>
+      </div>
+      <div class="contenedorTeacher">
+          <img src="assets/images/teacher-marcia.png" alt="" class="imagen">
+          <img src="assets/images/start-2.png" alt="" class="imagen-3">
+          <h4>Marcia</h4>
+          <p class="nick2">Marciaayla</p>
+        <div class="correo">
+          <i class="fa fa-envelope" aria-hidden="true"></i> <p>marcia@laboratoria.la</p>
+        </div>
+        </div>
+        <div class="contenedorTeacher">
+            <img src="assets/images/teacher-fabian.png" alt="" class="imagen">
+            <img src="assets/images/start-3.png" alt="" class="imagen-4">
+            <h4>Fabián</h4>
+            <p class="nick3">Han Fabian</p>
+          <div class="correo">
+            <i class="fa fa-envelope" aria-hidden="true"></i> <p>fabian@laboratoria.la</p>
+          </div>
+          </div>
+          <div class="contenedorTeacher">
+              <img src="assets/images/teacher-allison-01.jpg" alt="" class="imagen">
+              <img src="assets/images/start-4.png" alt="" class="imagen-5">
+              <h4>Allison</h4>
+              <p class="nick4">Ali-3PIO</p>
+            <div class="correo">
+              <i class="fa fa-envelope" aria-hidden="true"></i> <p>allison@laboratoria.la</p>
+            </div>
+            </div>
+  </div>
+  
 </div>
-    <!-- Base de datos -->
-    <script src="./js/data.js"></script>
-    <!-- Aquí va tus archivos JS -->
+		<!-- Base de datos -->
+		<script src="./js/data.js"></script>
+		<!-- Aquí va tus archivos JS -->
     <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>

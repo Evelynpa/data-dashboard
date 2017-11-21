@@ -4707,6 +4707,27 @@ var data = {
             {
               'number': 1,
               'score': {
+                'tech': 1800,
+                'hse': 1200
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1800,
+                'hse': 1200
+              }
+            }
+          ]
+        },
+        {
+          'name': 'Roana Menego',
+          'photo': 'http://dummyimage.com/102x187.png/dddddd/000000',
+          'active': false,
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
                 'tech': 1759,
                 'hse': 1006
               }
@@ -4721,16 +4742,25 @@ var data = {
           ]
         },
         {
-          'name': 'Roana Menego',
-          'photo': 'http://dummyimage.com/102x187.png/dddddd/000000',
-          'active': false,
-          'sprints': []
-        },
-        {
           'name': 'Ofella Weakley',
           'photo': 'http://dummyimage.com/190x155.png/dddddd/000000',
           'active': false,
-          'sprints': []
+          'sprints': [
+            {
+              'number': 1,
+              'score': {
+                'tech': 1300,
+                'hse': 1000
+              }
+            },
+            {
+              'number': 2,
+              'score': {
+                'tech': 1450,
+                'hse': 764
+              }
+            }
+          ]
         },
         {
           'name': 'Gretchen Gerhts',
